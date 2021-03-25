@@ -73,8 +73,9 @@ function walk(ctx: Lint.WalkContext): void {
                     );
                 }
                 break;
-
+            case ts.SyntaxKind.JSDocDeprecatedTag:
             case ts.SyntaxKind.JSDocAugmentsTag:
+            case ts.SyntaxKind.JSDocAuthorTag:
                 // OK
                 break;
 
